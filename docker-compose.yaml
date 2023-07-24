@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+    postgres_db_postage:
+      image: postgres:10
+      container_name: javaee_postgres_postage
+      environment:
+        - POSTGRES_DB=bancodado_vespertino
+        - POSTGRES_USER=postgres
+        - POSTGRES_PASSWORD=postgres
+        - TZ=GMT
+      ports:
+        - 5432:5432
